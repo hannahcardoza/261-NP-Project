@@ -20,14 +20,21 @@ void setup() {
   pinMode(6,  OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
-  pinMode(2,  OUTPUT);
+  pinMode(2,  INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(Button), Calibrate, RISING);
 }
 
 void loop() {
+
+  VToe = analogRead(SToe);
+  VLateral = analogRead(SLateral);
+  VBall = analogRead(SBall);
+  VHeel = analogRead(SHeel);
+  
   if(Serial.available() > 0){
-    
+  
   }
+
 }
 
 void Calibrate(){
