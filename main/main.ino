@@ -1,8 +1,8 @@
 // pin variables
-int SToe      = A0;
-int SLateral  = A1;
-int SBall     = A2;
-int SHeel     = A4;
+int SToe      = A3;
+int SLateral  = A4;
+int SBall     = A0;
+int SHeel     = A1;
 int MFront    = 5;     // MFront receives the feedback from SToe
 int MLateral  = 3;     // MLateral receives the feedack from SLateral
 int MMedial   = 9;    // MMedial receives the feedback from SBall
